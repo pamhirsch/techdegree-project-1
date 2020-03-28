@@ -3,7 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-var randomQuote = '';
 /***
  * `getRandomQuote` function generates a random number between 0 and the
  * length of the array 'quotes'. It then uses that random number as the index
@@ -12,17 +11,21 @@ var randomQuote = '';
 
 function getRandomQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length);
-  randomQuote = quotes[randomNumber];
-  return randomQuote;
+  return quotes[randomNumber];
 }
 
-getRandomQuote();
-console.log(randomQuote);
 /***
  * `printQuote` function
 ***/
 
+function printQuote() {
+  var randomQuote = getRandomQuote();
+  var html = `<p class="quote">${randomQuote.quote}</p>`;
+  html += `<p class="source">${randomQuote.source}</p>`;
+  console.log(html);
+}
 
+printQuote();
 
 /***
  * click event listener for the print quote button
