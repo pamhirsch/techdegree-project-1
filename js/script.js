@@ -21,7 +21,14 @@ function getRandomQuote() {
 function printQuote() {
   var randomQuote = getRandomQuote();
   var html = `<p class="quote">${randomQuote.quote}</p>`;
-  html += `<p class="source">${randomQuote.source}</p>`;
+  html += `<p class="source">${randomQuote.source}`;
+  if ( randomQuote.hasOwnProperty('citation') ) {
+    html += `<span class="citation">${randomQuote.citation}</span>`;
+  };
+  if ( randomQuote.hasOwnProperty('year') ) {
+    html += `<span class="year">${randomQuote.year}</span>`;
+  };
+  html += `</p>`;
   console.log(html);
 }
 
