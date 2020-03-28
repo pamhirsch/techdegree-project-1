@@ -10,7 +10,7 @@ project 1 - A Random Quote Generator
 ***/
 
 function getRandomQuote() {
-  var randomNumber = Math.floor(Math.random() * quotes.length);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
 
@@ -22,8 +22,8 @@ function getRandomQuote() {
 ***/
 
 function printQuote() {
-  var randomQuote = getRandomQuote();
-  var html = `<p class="quote">${randomQuote.quote}</p>`;
+  let randomQuote = getRandomQuote();
+  let html = `<p class="quote">${randomQuote.quote}</p>`;
   html += `<p class="source">${randomQuote.source}`;
   if ( randomQuote.hasOwnProperty('citation') ) {
     html += `<span class="citation">${randomQuote.citation}</span>`;
