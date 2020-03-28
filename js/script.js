@@ -29,10 +29,10 @@ function printQuote() {
     html += `<span class="year">${randomQuote.year}</span>`;
   };
   html += `</p>`;
-  console.log(html);
+  document.getElementById('quote-box').innerHTML = html;
 }
 
-printQuote();
+// printQuote();
 
 /***
  * click event listener for the print quote button
