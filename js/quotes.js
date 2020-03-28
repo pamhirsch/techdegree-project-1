@@ -8,7 +8,7 @@ var quotes = [
     source: 'Yoda',
     citation: 'The Phantom Menace',
     year: '1999',
-    tags: 'movie'
+    tags: 'Movie'
   },
   {
     quote: '“Never, never, never give up.',
@@ -17,7 +17,7 @@ var quotes = [
   {
     quote: 'You get whatever accomplishment you are willing to declare.',
     source: "Georgia O'Keefe",
-    tags: 'feminism'
+    tags: 'Feminism'
   },
   {
     quote: 'Go confidently in the direction of your dreams. Live the life you have imagined.',
@@ -28,17 +28,17 @@ var quotes = [
     source: 'Inspector Harold Francis Callahan',
     citation: 'Dirty Harry',
     year: '1971',
-    tags: 'movie'
+    tags: 'Movie'
   },
   {
     quote: 'Every artist was first an amateur',
     source: 'Ralph Waldo Emerson',
-    tags: 'art'
+    tags: 'Art'
   },
   {
     quote: 'The world always seems brighter when you’ve just made something that wasn’t there before.',
     source: 'Neil Gaiman',
-    tags: 'art'
+    tags: 'Art'
   },
 
 ];

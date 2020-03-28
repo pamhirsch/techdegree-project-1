@@ -15,7 +15,10 @@ function getRandomQuote() {
 }
 
 /***
- * `printQuote` function
+ * `printQuote` function calls the getRandomQuote function to get a random quote.
+ * It then builds and html string to be printed later. It also checks for the
+ * presence of 4 additional quote properties (beyond just the quote and source.)
+ * If these are present, it adds them to the html string.
 ***/
 
 function printQuote() {
@@ -28,11 +31,12 @@ function printQuote() {
   if ( randomQuote.hasOwnProperty('year') ) {
     html += `<span class="year">${randomQuote.year}</span>`;
   };
+  if ( randomQuote.hasOwnProperty('tags') ) {
+    html += `<span class="tag">${randomQuote.tags}</span>`;
+  };
   html += `</p>`;
   document.getElementById('quote-box').innerHTML = html;
 }
-
-// printQuote();
 
 /***
  * click event listener for the print quote button
