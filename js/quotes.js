@@ -1,4 +1,6 @@
-// This file holds the quotes array of quote objects.
+/***
+ * `quotes` array
+***/
 
 var quotes = [
   {

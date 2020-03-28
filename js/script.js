@@ -3,22 +3,21 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
-/*** 
- * `quotes` array 
-***/
-
-
-
+var randomQuote = '';
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function generates a random number between 0 and the
+ * length of the array 'quotes'. It then uses that random number as the index
+ * to grab a specific quotes object.
 ***/
 
+function getRandomQuote() {
+  var randomNumber = Math.floor(Math.random() * quotes.length);
+  randomQuote = quotes[randomNumber];
+  return randomQuote;
+}
 
-
+getRandomQuote();
+console.log(randomQuote);
 /***
  * `printQuote` function
 ***/
