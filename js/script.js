@@ -3,6 +3,31 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
+// array of heximdecimal colors to be used in the random color generator function
+
+let colors = [
+  '#9e4a23',
+  '#237d9e',
+  '#164556',
+  '#3021a2',
+  '#177349',
+  '#969b4b',
+  '#c02387',
+  '#952047',
+  '#865b69'
+];
+
+/***
+ * `getRandomColor`function generates a random color between 0 and the
+ * length of the array 'colors'. It then uses that random number as the index
+ * to grab a specific color and update the background color on the browser.
+***/
+
+function getRandomColor() {
+  let randomColor = Math.floor(Math.random() * colors.length);
+  document.body.style.backgroundColor = colors[randomColor];
+}
+
 /***
  * `getRandomQuote` function generates a random number between 0 and the
  * length of the array 'quotes'. It then uses that random number as the index
@@ -35,8 +60,16 @@ function printQuote() {
     html += `<span class="tag">${randomQuote.tags}</span>`;
   };
   html += `</p>`;
+  getRandomColor();
   document.getElementById('quote-box').innerHTML = html;
 }
+
+/***
+ * Asynchronous code to print a quote every 10 seconds without interaction
+ * from the user.
+***/
+
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
