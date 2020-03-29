@@ -5,7 +5,7 @@ project 1 - A Random Quote Generator
 
 // array of heximdecimal colors to be used in the random color generator function
 
-let colors = [
+const colors = [
   '#9e4a23',
   '#237d9e',
   '#164556',
@@ -24,7 +24,7 @@ let colors = [
 ***/
 
 function getRandomColor() {
-  let randomColor = Math.floor(Math.random() * colors.length);
+  const randomColor = Math.floor(Math.random() * colors.length);
   document.body.style.backgroundColor = colors[randomColor];
 }
 
@@ -35,7 +35,7 @@ function getRandomColor() {
 ***/
 
 function getRandomQuote() {
-  let randomNumber = Math.floor(Math.random() * quotes.length);
+  const randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
 

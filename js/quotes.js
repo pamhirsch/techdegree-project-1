@@ -2,7 +2,7 @@
  * `quotes` array
 ***/
 
-var quotes = [
+const quotes = [
   {
     quote: ' Fear is the path to the dark side…fear leads to anger…anger leads to hate…hate leads to suffering.',
     source: 'Yoda',
