@@ -50,13 +50,13 @@ function printQuote() {
   let randomQuote = getRandomQuote();
   let html = `<p class="quote">${randomQuote.quote}</p>`;
   html += `<p class="source">${randomQuote.source}`;
-  if ( randomQuote.hasOwnProperty('citation') ) {
+  if ( randomQuote.citation ) {
     html += `<span class="citation">${randomQuote.citation}</span>`;
   };
-  if ( randomQuote.hasOwnProperty('year') ) {
+  if ( randomQuote.year ) {
     html += `<span class="year">${randomQuote.year}</span>`;
   };
-  if ( randomQuote.hasOwnProperty('tags') ) {
+  if ( randomQuote.tags ) {
     html += `<span class="tag">${randomQuote.tags}</span>`;
   };
   html += `</p>`;
