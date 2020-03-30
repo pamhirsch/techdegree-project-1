@@ -7,7 +7,7 @@ const quotes = [
     quote: ' Fear is the path to the dark side…fear leads to anger…anger leads to hate…hate leads to suffering.',
     source: 'Yoda',
     citation: 'The Phantom Menace',
-    year: '1999',
+    year: 1999,
     tags: 'Movie'
   },
   {
@@ -27,7 +27,7 @@ const quotes = [
     quote: 'Go ahead. Make my day.',
     source: 'Inspector Harold Francis Callahan',
     citation: 'Dirty Harry',
-    year: '1971',
+    year: 1971,
     tags: 'Movie'
   },
   {
